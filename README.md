@@ -13,15 +13,17 @@ I decided to make a FRouting, Switching, and Protocols Documentation as this a s
 ## FRAME
 
 ### Default route
-<img width="410" alt="Screenshot 2023-07-08 141354" src="https://github.com/jotavo13/Capstone-Project/assets/122843130/23c3f3f8-dbce-41c5-839d-cf2f0dba9fe0">
+<img width="410" alt="Screenshot 2023-07-08 141354" src="https://github.com/jotavo13/Capstone-Project/assets/122843130/9af48338-ff10-4eeb-801a-220e15585e9f">
+
 
 
 ### Router
-<img width="414" alt="routing" src="https://github.com/jotavo13/Capstone-Project/assets/122843130/1f997750-faeb-4786-8b89-5e13d32db17a">
+<img width="414" alt="routing" src="https://github.com/jotavo13/Capstone-Project/assets/122843130/dfe9b610-8a5f-4c4e-a35f-d1f3ca799ec5">
 
 
 ### Switching
-<img width="407" alt="swtiching" src="https://github.com/jotavo13/Capstone-Project/assets/122843130/7b217da3-2535-4e8a-a983-9095f51d60db">
+<img width="407" alt="swtiching" src="https://github.com/jotavo13/Capstone-Project/assets/122843130/edd2dac0-855a-4712-8112-f69a225acf5a">
+
 
 
 ### Protocols
@@ -31,6 +33,8 @@ I decided to make a FRouting, Switching, and Protocols Documentation as this a s
 ### MISC
 <img width="419" alt="MISC" src="https://github.com/jotavo13/Capstone-Project/assets/122843130/17bb459d-0fa2-484e-a1b4-7a34ff367ddb">
 
+#### MISC ONCALL and what everything will look like inside
+<img width="417" alt="image" src="https://github.com/jotavo13/Capstone-Project/assets/122843130/1ca06f35-78eb-4a4b-8162-328e956e69d6">
 
 
 
