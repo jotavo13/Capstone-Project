@@ -4,6 +4,8 @@ const morgan = require('morgan');
 const methodOverride = require('method-override');
 const app = express();
 const mongoose = require('mongoose');
+const { DATABASE_URL, PORT } = require('./config');
+const basicRoutes = require('./controller/basic')
 
 
 
@@ -17,7 +19,7 @@ app.use(methodOverride("_method")) // override for put and delete requests from 
 app.use(express.urlencoded({extended: false})) // parse urlencoded request bodies
 app.use(express.static("public")) // serve files from public statically
 app.set('view engine', 'ejs');
-
+app.use('/basic', basicRoutes );
 
 // Controller
 

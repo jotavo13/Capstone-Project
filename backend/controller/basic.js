@@ -3,9 +3,9 @@
 ////////////////////////////////////////
 
 const express = require('express');
-const People = require('../models/people')
+// const Basic = require('../models/Basic')
 const router = express.Router();
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
 
 // ROUTES////////////////////////////////
 
