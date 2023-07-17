@@ -1,6 +1,6 @@
-const DATABASE_URL = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@sei.8obhe4t.mongodb.net/fiberDB?retryWrites=true&w=majority`;
+const DATABASE_URL = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@sei.8obhe4t.mongodb.net/basicDB?retryWrites=true&w=majority`;
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000; 
 
 const JWT_KEY_SECRET = process.env.JWT_KEY_SECRET;
 
