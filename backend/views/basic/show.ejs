@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("../partials/head.ejs") %>
+
+    <body style="background-color: blue; color: black;">
+        <%- include("../partials/header.ejs") %>
+            <main>
+                <div class="jumbotron text-center" style="background-color: blue; color: black;">
+                    <h1> <%= basic.Title %> - <%= basic.isItCurrent ? "Current" : "Not Current" %> </h1> 
+                    <br>
+                    <h3><%= basic.Information %></h3>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h1> <%= basic.Title2 %> </h1> 
+                            <h2> <%= basic.Information2 %> </h2> 
+                            ,<a href="/basic/"></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <h1> <%= basic.Title3 %> </h1> 
+                            <h2> <%= basic.Information3 %> </h2> 
+                            ,<a href="/basic/"></a>
+                        </div>
+                        <div class="col-sm-4">
+                            <h1> <%= basic.title4 %> </h1> 
+                            <h2> <%= basic.Information4 %> </h2> 
+                            ,<a href="/basic/"></a>
+                        </div>
+                    </div>
+                </div>
+                        <a href="/basic/<%= basic._id %>/edit"><button>Edit</button></a>
+                        <form action="/basic/<%= basic._id %>?_method=DELETE" method="POST">
+                            <input type="submit" value="Delete" />
+                        </form>
+                        <a href="/basic/"><button>Back to Main</button></a>
+                    </article>
+
+
+            </main>
+    </body>
+
+</html>
