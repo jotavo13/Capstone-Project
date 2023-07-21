@@ -2,59 +2,54 @@
 <html lang="en">
 <%- include("../partials/head.ejs") %>
 
-    <body style="background-color: blue; color: black;">
-        <%- include("../partials/header.ejs") %>
-            <main>
-                <div>
-                    <form action="/basic" method="post">
-                        <fieldset>
-                            <legend>Create a New Documantation</legend>
-                            <label>
-                              Title: </Title>:<input type="text" name="Title" placeholder="Enter the new Title" />
-                            </label>
-                                    <br>
-                             <label>
-                                Title2:<Title></Title>:<input type="text" name="Title2" placeholder="Enter the new Title of the title" />
-                            </label>
-                                            <br>    
-                                            <label>
-                                               Title3: <Title></Title>:<input type="text" name="Title3" placeholder="Enter the new Title3" />
-                                            </label>
-                                                    <br>
-                                             <label>
-                                                Title4: <Title></Title>:<input type="text" name="Title4" placeholder="Enter the new Title of the title4" />
-                                            </label>
-                                                            <br>     
-                            <label>
-                                Information:<input type="text" name="Information" placeholder="The information about this new Documantation" />
-                            </label>
-                                <br>
-
-                            <label>
-                                Information2:<input type="text" name="Information2" placeholder="The information about this new Document" />
-                            </label>
-                                    <br>         
-                                    <label>
-                                        Information3:<input type="text" name="Information3" placeholder="The information about this new Documantation" />
-                                    </label>
-                                        <br>
-                                    <label>
-                                        Information4:<input type="text" name="Information4" placeholder="The information about this new Document" />
-                                    </label>
-                                            <br>                      
-                            <label>
-                                Img:<input type="text" placeholder="ImageURL" name="IMG" id="img">
-                            </label>
-                            <label>
-                                Is It Current:<input type="checkbox" name="isItCurrent" />
-                            </label>
-                        </fieldset>
-
-                        <input type="submit" value="create new Title" />
-                    </form>
-                    <a href="/basic/"><button>Back to Main</button></a>
-                </div>
-            </main>
-    </body>
+<body style="background-color:blue!important ; color: black; font-family: Arial, sans-serif;">
+    <%- include("../partials/header.ejs") %>
+    <main>
+        <div>
+            <form action="/basic" method="post" style="margin-top: 20px;">
+                <fieldset>
+                    <legend>Create a New Documantation</legend>
+                    <label style="display: block;margin-bottom: 10px;">
+                        Title:<input type="text" name="Title" placeholder="Enter the new Title" />
+                    </label>
+                    <label style="display: block;margin-bottom: 10px;">
+                        Title2:<input type="text" name="Title2" placeholder="Enter the new Title of the title" />
+                    </label>
+                    <label style="display: block;margin-bottom: 10px;">
+                        Title3:<input type="text" name="Title3" placeholder="Enter the new Title3" />
+                    </label>
+                    <label style="display: block;margin-bottom: 10px;">
+                        Title4:<input type="text" name="Title4" placeholder="Enter the new Title of the title4" />
+                    </label>
+                    <label style="display: block;margin-bottom: 10px;">
+                        Information:<input type="text" name="Information"
+                            placeholder="The information about this new Documantation" />
+                    </label>
+                    <label style="display: block;margin-bottom: 10px;">
+                        Information2:<input type="text" name="Information2"
+                            placeholder="The information about this new Document" />
+                    </label>
+                    <label style="display: block;margin-bottom: 10px;">
+                        Information3:<input type="text" name="Information3"
+                            placeholder="The information about this new Documantation" />
+                    </label>
+                    <label style="display: block;margin-bottom: 10px;">
+                        Information4:<input type="text" name="Information4"
+                            placeholder="The information about this new Document" />
+                    </label>
+                    <label style="display: block;margin-bottom: 10px;">
+                        Img:<input type="text" placeholder="ImageURL" name="IMG" id="img">
+                    </label>
+                    <label style="display: block;margin-bottom: 10px;">
+                        Is It Current:<input type="checkbox" name="isItCurrent" />
+                    </label>
+                </fieldset>
+                <input type="submit" value="create new Title" />
+            </form>
+            <a href="/basic/"><button style="margin-top: 10px; padding: 10px 20px; background-color: #333;cursor: pointer; ;color: #fff; border: none; border-radius: 5px
+            ">Back to Main</button></a>
+        </div>
+    </main>
+</body>
 
 </html>

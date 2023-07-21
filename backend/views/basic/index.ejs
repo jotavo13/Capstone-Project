@@ -2,26 +2,26 @@
 <html lang="en">
 <%- include("../partials/head.ejs") %>
 
-    <body style="background-color: blue; color: black;">
-        <%- include("../partials/header.ejs") %>
-            <main>
-                <div class="container-fluid"> 
-                    <div class="container text-center">
-                        <div class="row align-items-start">
-                            <div class="col">
-                             <% for (basic of basics) { %>
-                                 <article>
-                                         <h2> 
-                                            <a style="color: black;" href="/basic/<%= basic._id %>"><%= basic.Title %></a> 
-                                            <img src="<%= basic.IMG %>" alt="<%= basic.IMG %>">
-                                         </h2>
-                                 </article>
-                             <% } %>
-                            </div>
-                        </div>
+<body style="background-color:blue!important ; color: black; font-family: Arial, sans-serif;">
+    <%- include("../partials/header.ejs") %>
+    <main>
+        <div class="container-fluid">
+            <div class="container text-center">
+                <div class="row align-items-start">
+                    <div class="col">
+                        <% for (basic of basics) { %>
+                        <article>
+                            <h2>
+                                <a style="color: black;" href="/basic/<%= basic._id %>"><%= basic.Title %></a>
+                                <img src="<%= basic.IMG %>" alt="<%= basic.IMG %>">
+                            </h2>
+                        </article>
+                        <% } %>
                     </div>
                 </div>
-            </main>
-    </body>
+            </div>
+        </div>
+    </main>
+</body>
 
 </html>

@@ -2,46 +2,52 @@
 <html lang="en">
 <%- include("../partials/head.ejs") %>
 
-    <body>
-        <%- include("../partials/header.ejs") %>
-            <main>
-                <div>
-                    <form action="/basic/<%= basic._id %>?_method=PUT" method="post">
-                        <fieldset>
-                            <legend>Edit a <%= basic.Title %>
-                            </legend>
-                            <label>
-                              Title: <Title></Title> :<input type="text" name="Title" value="<%= basic.Title %>" placeholder="enter the new Title" />
-                            </label>
-                            <label>
-                                Information:<input type="text" name="Information" value="<%= basic.Information %>" placeholder="enter the information of this section" />
-                            </label>
-                            <label>
-                                Title2: <Title></Title> :<input type="text" name="Title2" value="<%= basic.Title2 %>" placeholder="enter the new Title" />
-                              </label>
-                              <label>
-                                  Information2:<input type="text" name="Information2" value="<%= basic.Information2 %>" placeholder="enter the information of this section" />
-                              </label>
-                              <label>
-                                Title3: <Title></Title> :<input type="text" name="Title3" value="<%= basic.Title3 %>" placeholder="enter the new Title" />
-                              </label>
-                              <label>
-                                  Information3:<input type="text" name="Information3" value="<%= basic.Information3 %>" placeholder="enter the information of this section" />
-                              </label>
-                              <label>
-                                Title4: <Title></Title> :<input type="text" name="Title4" value="<%= basic.Title4 %>" placeholder="enter the new Title" />
-                              </label>
-                              <label>
-                                  Information4:<input type="text" name="Information4" value="<%= basic.Information4 %>" placeholder="enter the information of this section" />
-                              </label>
-                             <label>
-                                IMG :<input type="text" name="IMG" value="<%= basic.IMG %>" placeholder="enter the ImageURL" />
-                             </label>
-                        </fieldset>
-                        <input type="submit" value="Update <%= basic.Title %>" />
-                    </form>
-                </div>
-            </main>
-    </body>
+<body style="background-color:blue!important ; color: black; font-family: Arial, sans-serif;">
+    <%- include("../partials/header.ejs") %>
+    <main>
+        <div>
+            <form action="/basic/<%= basic._id %>?_method=PUT" method="post" style="margin-top: 20px;">
+                <fieldset>
+                    <legend>Edit a <%= basic.Title %></legend>
+                    <label style="display: block;margin-bottom: 10px;">
+                        Title: <input type="text" name="Title" value="<%= basic.Title %>" placeholder="enter the new Title" />
+                    </label>
+                    <label style="display: block;margin-bottom: 10px;">
+                        Information:<input type="text" name="Information" value="<%= basic.Information %>"
+                            placeholder="enter the information of this section" />
+                    </label>
+                    <label style="display: block;margin-bottom: 10px;">
+                        Title2: <input type="text" name="Title2" value="<%= basic.Title2 %>"
+                            placeholder="enter the new Title" />
+                    </label>
+                    <label style="display: block;margin-bottom: 10px;">
+                        Information2:<input type="text" name="Information2" value="<%= basic.Information2 %>"
+                            placeholder="enter the information of this section" />
+                    </label>
+                    <label style="display: block;margin-bottom: 10px;">
+                        Title3: <input type="text" name="Title3" value="<%= basic.Title3 %>"
+                            placeholder="enter the new Title" />
+                    </label>
+                    <label style="display: block;margin-bottom: 10px;">
+                        Information3:<input type="text" name="Information3" value="<%= basic.Information3 %>"
+                            placeholder="enter the information of this section" />
+                    </label>
+                    <label style="display: block;margin-bottom: 10px;">
+                        Title4: <input type="text" name="Title4" value="<%= basic.Title4 %>"
+                            placeholder="enter the new Title" />
+                    </label>
+                    <label style="display: block;margin-bottom: 10px;">
+                        Information4:<input type="text" name="Information4" value="<%= basic.Information4 %>"
+                            placeholder="enter the information of this section" />
+                    </label>
+                    <label style="display: block;margin-bottom: 10px;">
+                        IMG :<input type="text" name="IMG" value="<%= basic.IMG %>" placeholder="enter the ImageURL" />
+                    </label>
+                </fieldset>
+                <input type="submit" value="Update <%= basic.Title %>" />
+            </form>
+        </div>
+    </main>
+</body>
 
 </html>

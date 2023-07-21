@@ -1,0 +1,103 @@
+/* Body styles */
+body {
+  background-color: rgb(165, 2, 119) !important;
+  color: black;
+  font-family: Arial, sans-serif; /* You can change the font-family if needed */
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  background-color: blue ;
+  color: black;
+  padding: 20px 0;
+}
+
+/* Jumbotron styles */
+.jumbotron {
+  text-align: center;
+  background-color: blue ;
+  color: black;
+  padding: 20px;
+}
+
+.jumbotron h1 {
+  margin-bottom: 20px;
+}
+
+/* Container styles */
+.container {
+  margin-top: 20px;
+}
+
+/* Column styles */
+.col-sm-4 {
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.col-sm-4 h1 {
+  margin-bottom: 10px;
+}
+
+.col-sm-4 h2 {
+  margin-bottom: 20px;
+}
+
+/* Form styles */
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="checkbox"] {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Buttons styles */
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Links styles */
+a {
+  color: #007bff; /* Change the link color as desired */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* New styles to prevent overlapping */
+.row {
+  margin: 20px 0;
+}
+
+.col-sm-4 {
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: red;
+}
